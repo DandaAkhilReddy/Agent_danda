@@ -1,0 +1,199 @@
+# ReplyCopilot - iOS App .gitignore
+
+# ==========================================
+# macOS
+# ==========================================
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# ==========================================
+# Xcode
+# ==========================================
+# Build generated
+build/
+DerivedData/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+# Xcode workspace files
+*.xcworkspace
+!default.xcworkspace
+
+# Xcode project files
+# *.xcodeproj (keep project files checked in)
+
+# CocoaPods
+Pods/
+*.xcworkspace
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+fastlane/.env
+
+# ==========================================
+# iOS / Swift
+# ==========================================
+*.ipa
+*.dSYM.zip
+*.dSYM
+*.app.zip
+
+# Code Injection
+iOSInjectionProject/
+
+# ==========================================
+# Secrets & Credentials
+# ==========================================
+# Firebase
+GoogleService-Info.plist
+google-services.json
+
+# Azure
+.env
+.env.local
+.env.production
+local.settings.json
+*.azureauth
+
+# API Keys
+*secrets.json
+*credentials.json
+*.key
+*.pem
+
+# Apple Certificates
+*.p12
+*.mobileprovision
+*.certSigningRequest
+
+# ==========================================
+# Node.js / Backend
+# ==========================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/install-state.gz
+
+# ==========================================
+# Azure Functions
+# ==========================================
+bin/
+obj/
+.azurefunctions/
+__blobstorage__/
+__queuestorage__/
+__azurite_db*__.json
+.python_packages/
+worker.config.json
+
+# ==========================================
+# Testing
+# ==========================================
+*.xcresult
+*.coverage
+coverage/
+.nyc_output/
+
+# ==========================================
+# IDE
+# ==========================================
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains
+.idea/
+*.iml
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ==========================================
+# Logs
+# ==========================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ==========================================
+# Temporary Files
+# ==========================================
+*.tmp
+*.temp
+.tmp/
+.cache/
+
+# ==========================================
+# Project Specific
+# ==========================================
+# Don't ignore documentation
+!docs/
+!*.md
+!README.md
+
+# Don't ignore source code
+!ios/**/*.swift
+!backend/**/*.js
+!backend/**/*.json
+
+# Ignore user-specific config
+Config.local.swift
