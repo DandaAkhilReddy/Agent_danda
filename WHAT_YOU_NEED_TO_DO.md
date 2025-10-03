@@ -90,16 +90,20 @@ az functionapp function keys list \
 
 **How**:
 1. Open file: `C:\users\akhil\projects\ReplyCopilot\ios\ReplyCopilot\Config\Config.swift`
-2. Find line 32 (around there):
+2. Find line ~49:
    ```swift
-   static let apiKey = "REPLACE_WITH_YOUR_FUNCTION_KEY"
+   static let apiKey = ProcessInfo.processInfo.environment["REPLYCOPILOT_API_KEY"] ?? "PASTE_YOUR_API_KEY_HERE"
    ```
-3. Replace with your actual key:
+3. Replace `"PASTE_YOUR_API_KEY_HERE"` with your actual key:
    ```swift
-   static let apiKey = "abc123yourkeyhere"
+   static let apiKey = ProcessInfo.processInfo.environment["REPLYCOPILOT_API_KEY"] ?? "your-api-key-here"
    ```
-4. Save the file
-5. Done!
+4. **OR** set environment variable in Xcode:
+   - Product → Scheme → Edit Scheme → Run → Arguments
+   - Add: `REPLYCOPILOT_API_KEY` = `your-key`
+5. Save and Done!
+
+**⚠️ IMPORTANT**: Don't commit your API key to Git! Keep it local only.
 
 ---
 

@@ -43,9 +43,10 @@ struct Config {
     static let baseURL = environment.baseURL
 
     /// Azure Function API key
-    /// TODO: Replace with your actual function key after deployment
+    /// TODO: Set this in Xcode build settings or use environment variable
     /// Get from: Azure Portal → replycopilot-api-2025 → Functions → generateReplies → Function Keys
-    static let apiKey = "REPLACE_WITH_YOUR_FUNCTION_KEY"
+    /// For now, you can paste your key here locally (don't commit it!)
+    static let apiKey = ProcessInfo.processInfo.environment["REPLYCOPILOT_API_KEY"] ?? "PASTE_YOUR_API_KEY_HERE"
 
     /// API version
     static let apiVersion = "1.0"
