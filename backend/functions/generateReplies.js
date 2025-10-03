@@ -1,6 +1,5 @@
 const { app } = require('@azure/functions');
-const { AzureOpenAI } = require('@azure/openai');
-const { DefaultAzureCredential } = require('@azure/identity');
+const { OpenAI } = require('openai');
 
 /**
  * ReplyCopilot - Generate AI Reply Suggestions
@@ -12,16 +11,25 @@ const { DefaultAzureCredential } = require('@azure/identity');
  * - Immediate buffer cleanup
  */
 
-// Initialize Azure OpenAI client (uses managed identity or env vars)
-const endpoint = process.env.OPENAI_ENDPOINT;
-const apiKey = process.env.OPENAI_API_KEY;
-const deploymentName = process.env.OPENAI_DEPLOYMENT || 'gpt-4o-vision';
+// OpenAI client configuration (initialized lazily)
+let client = null;
 
-const client = new AzureOpenAI({
-  endpoint,
-  apiKey,
-  apiVersion: '2024-08-01-preview'
-});
+function getClient() {
+  if (!client) {
+    const endpoint = process.env.OPENAI_ENDPOINT || 'https://eastus.api.cognitive.microsoft.com/';
+    const apiKey = process.env.OPENAI_API_KEY;
+    const deploymentName = process.env.OPENAI_DEPLOYMENT || 'gpt-4o';
+    const apiVersion = '2024-08-01-preview';
+
+    client = new OpenAI({
+      apiKey: apiKey,
+      baseURL: `${endpoint}openai/deployments/${deploymentName}`,
+      defaultQuery: { 'api-version': apiVersion },
+      defaultHeaders: { 'api-key': apiKey }
+    });
+  }
+  return client;
+}
 
 // Tone-specific system prompts
 const TONE_PROMPTS = {
@@ -93,8 +101,10 @@ app.http('generateReplies', {
       const imageDataUrl = image.startsWith('data:') ? image : `data:image/jpeg;base64,${image}`;
 
       // Call Azure OpenAI Vision API
-      const response = await client.chat.completions.create({
-        model: deploymentName,
+      const openai = getClient();
+      const model = process.env.OPENAI_DEPLOYMENT || 'gpt-4o';
+      const response = await openai.chat.completions.create({
+        model: model,
         messages: [
           {
             role: 'system',
