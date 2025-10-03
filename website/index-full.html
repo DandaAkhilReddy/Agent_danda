@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplyCopilot - AI-Powered Smart Replies for Any Messaging App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-full.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">ReplyCopilot</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#demo">Try Demo</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="nav-actions">
+                    <a href="demo.html" class="btn btn-secondary">Try Demo</a>
+                    <button class="btn btn-primary">Get Started Free</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Powered by GPT-4o Vision • Privacy-First Design</span>
+                </div>
+                <h1 class="hero-title">
+                    Never Struggle with
+                    <span class="gradient-text">Messaging</span>
+                    <span class="gradient-text">Again</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered reply assistant that transforms screenshots into smart, contextual responses in under 2 seconds.
+                    Works with WhatsApp, iMessage, Instagram, Outlook, Slack, Teams, and any messaging app.
+                </p>
+                <div class="hero-cta">
+                    <a href="demo.html" class="btn btn-primary btn-large">
+                        <span>Try Free Demo</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <button class="btn btn-secondary btn-large" onclick="scrollToSection('how-it-works')">
+                        <span class="btn-icon">▶</span>
+                        <span>See How It Works</span>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">< 2s</div>
+                        <div class="stat-label">Response Time</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Tone Modes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Platforms</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Private</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Why Choose ReplyCopilot?</h2>
+                <p class="section-subtitle">Intelligent features designed to save you time and enhance your conversations</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3>4 Intelligent Tone Modes</h3>
+                    <p>Professional, Friendly, Funny, or Flirty - adapt your responses to any situation with AI-powered tone matching.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Get 3-5 smart reply suggestions in under 2 seconds. No more staring at your screen wondering what to say.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Privacy-First Design</h3>
+                    <p>Zero data retention. Screenshots analyzed in-memory only. Never stored, never logged, completely private.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3>Works Everywhere</h3>
+                    <p>WhatsApp, iMessage, Instagram, Outlook, Slack, Teams - if you can screenshot it, we can help you reply.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>GPT-4o Vision AI</h3>
+                    <p>Powered by OpenAI's latest GPT-4o model with vision capabilities for deep context understanding.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Context-Aware</h3>
+                    <p>AI reads the entire conversation flow to generate replies that actually make sense in context.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Get smart replies in 3 simple steps</p>
+            </div>
+
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>📸 Take a Screenshot</h3>
+                        <p>Open any messaging app, take a screenshot of the conversation. Works with any app on your iPhone.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="phone-mockup">
+                            <div class="phone-screen">
+                                <div class="chat-message received">Hey! Are you free for coffee this weekend?</div>
+                                <div class="screenshot-indicator">📸</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step step-reverse">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🎭 Choose Your Tone</h3>
+                        <p>Select from Professional, Friendly, Funny, or Flirty modes. AI adapts to match your style.</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="tone-selector">
+                            <button class="tone-option active">😊 Friendly</button>
+                            <button class="tone-option">💼 Professional</button>
+                            <button class="tone-option">😂 Funny</button>
+                            <button class="tone-option">💕 Flirty</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>✨ Get Smart Replies</h3>
+                        <p>Receive 3-5 perfect responses in under 2 seconds. Tap to copy and send!</p>
+                    </div>
+                    <div class="step-visual">
+                        <div class="replies-preview">
+                            <div class="reply-option">☕ I'd love to! Saturday afternoon works great for me!</div>
+                            <div class="reply-option">🙌 Count me in! What time were you thinking?</div>
+                            <div class="reply-option">😊 Coffee sounds perfect! Let's do Saturday!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo CTA -->
+    <section class="demo-cta" id="demo">
+        <div class="container">
+            <div class="demo-cta-content">
+                <h2>Try It Yourself - No Sign-Up Required!</h2>
+                <p>Experience the magic of AI-powered replies with our interactive demo using mock data</p>
+                <a href="demo.html" class="btn btn-primary btn-large">
+                    <span>Launch Interactive Demo</span>
+                    <span class="btn-icon">🚀</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple, Transparent Pricing</h2>
+                <p class="section-subtitle">Start free, upgrade when you need more</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Free</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">0</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✅ 20 replies per day</div>
+                        <div class="feature">✅ 4 tone modes</div>
+                        <div class="feature">✅ All platforms supported</div>
+                        <div class="feature">✅ Privacy-first design</div>
+                        <div class="feature">❌ Priority support</div>
+                        <div class="feature">❌ Custom tones</div>
+                    </div>
+                    <button class="btn btn-secondary btn-block">Get Started Free</button>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="popular-badge">MOST POPULAR</div>
+                    <div class="pricing-header">
+                        <h3>Pro</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">9.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✅ Unlimited replies</div>
+                        <div class="feature">✅ 4 tone modes</div>
+                        <div class="feature">✅ All platforms supported</div>
+                        <div class="feature">✅ Privacy-first design</div>
+                        <div class="feature">✅ Priority support</div>
+                        <div class="feature">✅ Custom tones (coming soon)</div>
+                    </div>
+                    <button class="btn btn-primary btn-block">Start Pro Trial</button>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Enterprise</h3>
+                        <div class="price">
+                            <span class="amount-text">Custom</span>
+                        </div>
+                    </div>
+                    <div class="pricing-features">
+                        <div class="feature">✅ Everything in Pro</div>
+                        <div class="feature">✅ Team management</div>
+                        <div class="feature">✅ Custom AI training</div>
+                        <div class="feature">✅ API access</div>
+                        <div class="feature">✅ Dedicated support</div>
+                        <div class="feature">✅ SLA guarantees</div>
+                    </div>
+                    <button class="btn btn-secondary btn-block">Contact Sales</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Everything you need to know</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does ReplyCopilot work?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Take a screenshot of any conversation, choose your tone, and get 3-5 smart reply suggestions powered by GPT-4o AI in under 2 seconds.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is my data private?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Absolutely! We never store screenshots or messages. Everything is processed in-memory only and immediately discarded. Zero data retention.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Which messaging apps are supported?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        All of them! If you can screenshot it, we can analyze it. Works with WhatsApp, iMessage, Instagram, Outlook, Slack, Teams, and any other messaging app.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How accurate are the AI replies?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Powered by GPT-4o Vision, our AI understands context, tone, and conversation flow to generate highly relevant responses. You can always edit before sending!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I try before I buy?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        Yes! We offer 20 free replies per day. Try our interactive demo with mock data (no sign-up required) or start with the free tier.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What makes ReplyCopilot different?</h3>
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        We're the only app that combines GPT-4o Vision AI, 4 tone modes, cross-platform support, and absolute privacy - all in under 2 seconds response time.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-final">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Transform Your Messaging?</h2>
+                <p>Join thousands of users saving 30+ minutes every day with AI-powered smart replies</p>
+                <div class="cta-buttons">
+                    <a href="demo.html" class="btn btn-primary btn-large">Try Free Demo</a>
+                    <button class="btn btn-secondary btn-large">Download iOS App</button>
+                </div>
+                <p class="cta-note">🎉 No credit card required • 20 free replies daily</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <span class="logo-icon">🤖</span>
+                        <span class="logo-text">ReplyCopilot</span>
+                    </div>
+                    <p>AI-powered smart replies for any messaging app</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="demo.html">Demo</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 ReplyCopilot. All rights reserved. Built with ❤️ and GPT-4o</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
