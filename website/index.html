@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ReplyCopilot - AI-powered reply assistant that transforms screenshots into smart, contextual responses. Works with WhatsApp, iMessage, Instagram, Outlook, Slack, and Teams.">
+    <meta name="keywords" content="AI, messaging assistant, smart replies, GPT-4, iOS app, automation">
+    <title>ReplyCopilot - AI-Powered Smart Replies for Any Messaging App</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Calendly -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">ReplyCopilot</span>
+                </div>
+                <div class="nav-links">
+                    <a href="#features">Features</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#ai-technology">AI Technology</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#testimonials">Testimonials</a>
+                    <a href="https://github.com/DandaAkhilReddy/Agent_danda" target="_blank">GitHub</a>
+                </div>
+                <div class="nav-actions">
+                    <button class="btn btn-secondary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">Book a Demo</button>
+                    <button class="btn btn-primary">Get Started Free</button>
+                </div>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+            <div class="gradient-blob blob-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">✨</span>
+                    <span>Powered by GPT-4o Vision • Privacy-First Design</span>
+                </div>
+                <h1 class="hero-title">
+                    Never Struggle with
+                    <span class="gradient-text">Messaging</span>
+                    <span class="gradient-text">Again</span>
+                </h1>
+                <p class="hero-subtitle">
+                    AI-powered reply assistant that transforms screenshots into smart, contextual responses in seconds.
+                    Works with WhatsApp, iMessage, Instagram, Outlook, Slack, Teams, and any messaging app.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">< 2s</div>
+                        <div class="stat-label">Response Time</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Tone Modes</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Platforms</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Private</div>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-large">
+                        <span>Start Free Trial</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button class="btn btn-secondary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">
+                        <span class="btn-icon">📅</span>
+                        <span>Book a Demo</span>
+                    </button>
+                </div>
+                <div class="hero-trust">
+                    <div class="trust-badges">
+                        <span class="trust-badge">🔒 Zero Data Retention</span>
+                        <span class="trust-badge">⚡ 99.9% Uptime</span>
+                        <span class="trust-badge">🌟 GDPR Compliant</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <div class="demo-chat">
+                            <div class="chat-message received">
+                                <p>Hey! Can you help me with the project proposal?</p>
+                                <span class="time">10:23 AM</span>
+                            </div>
+                            <div class="ai-suggestions">
+                                <div class="suggestion-header">
+                                    <span class="ai-badge">AI</span>
+                                    <span>Smart Replies</span>
+                                </div>
+                                <div class="suggestion professional">
+                                    <span class="tone-badge">Professional</span>
+                                    <p>Absolutely! I'd be happy to assist with the project proposal...</p>
+                                </div>
+                                <div class="suggestion friendly">
+                                    <span class="tone-badge">Friendly</span>
+                                    <p>Sure thing! Let me know what you need and I'll help out 😊</p>
+                                </div>
+                                <div class="suggestion funny">
+                                    <span class="tone-badge">Funny</span>
+                                    <p>Project proposal? I was born ready! (After my third coffee ☕)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="social-proof">
+        <div class="container">
+            <p class="social-proof-text">Trusted by professionals at</p>
+            <div class="company-logos">
+                <div class="company-logo">Tech Startups</div>
+                <div class="company-logo">Sales Teams</div>
+                <div class="company-logo">Customer Support</div>
+                <div class="company-logo">Remote Workers</div>
+                <div class="company-logo">Entrepreneurs</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How It Works</h2>
+                <p class="section-subtitle">Transform screenshots into smart replies in 4 simple steps</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">📸</div>
+                    <h3 class="step-title">Take Screenshot</h3>
+                    <p class="step-description">Screenshot any conversation in WhatsApp, iMessage, Instagram, Slack, or any messaging app</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🤖</div>
+                    <h3 class="step-title">AI Analyzes</h3>
+                    <p class="step-description">GPT-4o Vision reads the conversation and understands context, tone, and relationship</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">✨</div>
+                    <h3 class="step-title">Get Suggestions</h3>
+                    <p class="step-description">Receive 3-5 smart reply options tailored to your chosen tone (Professional, Friendly, Funny, Flirty)</p>
+                </div>
+                <div class="step-arrow">→</div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">⌨️</div>
+                    <h3 class="step-title">One-Tap Send</h3>
+                    <p class="step-description">Insert perfect reply via custom keyboard or copy-paste. Screenshot auto-deleted for privacy.</p>
+                </div>
+            </div>
+            <div class="cta-section">
+                <button class="btn btn-primary btn-large">Try It Now - Free</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features</h2>
+                <p class="section-subtitle">Everything you need for perfect messaging, every time</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎭</div>
+                    <h3 class="feature-title">4 Tone Modes</h3>
+                    <p class="feature-description">Switch between Professional, Friendly, Funny, and Flirty tones. Perfect response for every situation.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Professional</span>
+                        <span class="tag">Friendly</span>
+                        <span class="tag">Funny</span>
+                        <span class="tag">Flirty</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">6+ Platforms</h3>
+                    <p class="feature-description">Optimized for WhatsApp, iMessage, Instagram, Outlook, Slack, Teams. Works with ANY messaging app.</p>
+                    <div class="feature-tags">
+                        <span class="tag">WhatsApp</span>
+                        <span class="tag">iMessage</span>
+                        <span class="tag">Instagram</span>
+                        <span class="tag">Universal</span>
+                    </div>
+                </div>
+                <div class="feature-card highlight">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Privacy-First</h3>
+                    <p class="feature-description">Zero screenshot storage. All processing in-memory. No data retention. Your conversations stay private.</p>
+                    <div class="feature-tags">
+                        <span class="tag">No Storage</span>
+                        <span class="tag">Encrypted</span>
+                        <span class="tag">GDPR</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Lightning Fast</h3>
+                    <p class="feature-description">< 2 second average response time. Instant replies when you need them most.</p>
+                    <div class="feature-tags">
+                        <span class="tag">< 2s Response</span>
+                        <span class="tag">99.9% Uptime</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌨️</div>
+                    <h3 class="feature-title">Custom Keyboard</h3>
+                    <p class="feature-description">System-wide keyboard extension. One-tap reply insertion in any app. No copy-paste needed.</p>
+                    <div class="feature-tags">
+                        <span class="tag">iOS Keyboard</span>
+                        <span class="tag">One-Tap</span>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Smart Analytics</h3>
+                    <p class="feature-description">Track your messaging patterns. See which tones work best. Build better communication habits.</p>
+                    <div class="feature-tags">
+                        <span class="tag">Insights</span>
+                        <span class="tag">Streaks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Technology -->
+    <section id="ai-technology" class="ai-technology">
+        <div class="container">
+            <div class="ai-content">
+                <div class="ai-visual">
+                    <div class="ai-diagram">
+                        <div class="ai-layer">
+                            <div class="ai-node">
+                                <span class="node-icon">📸</span>
+                                <span class="node-label">Screenshot Input</span>
+                            </div>
+                        </div>
+                        <div class="ai-layer">
+                            <div class="ai-node">
+                                <span class="node-icon">👁️</span>
+                                <span class="node-label">GPT-4o Vision</span>
+                                <span class="node-detail">Multimodal AI</span>
+                            </div>
+                        </div>
+                        <div class="ai-layer">
+                            <div class="ai-node">
+                                <span class="node-icon">🧠</span>
+                                <span class="node-label">Context Analysis</span>
+                                <span class="node-detail">Tone, Platform, Relationship</span>
+                            </div>
+                        </div>
+                        <div class="ai-layer">
+                            <div class="ai-node">
+                                <span class="node-icon">✨</span>
+                                <span class="node-label">Smart Replies</span>
+                                <span class="node-detail">3-5 Perfect Responses</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ai-details">
+                    <div class="section-badge">
+                        <span class="badge-icon">🤖</span>
+                        <span>Advanced AI Technology</span>
+                    </div>
+                    <h2 class="section-title">Powered by GPT-4o Vision</h2>
+                    <p class="section-description">
+                        ReplyCopilot uses OpenAI's most advanced multimodal AI model to understand visual context,
+                        conversation flow, and social dynamics. Our AI doesn't just read text—it understands relationships,
+                        urgency, sentiment, and platform-specific communication styles.
+                    </p>
+                    <div class="ai-features">
+                        <div class="ai-feature">
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Visual Understanding</strong>
+                                <p>No OCR needed. Directly analyzes screenshots like a human would.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Context Awareness</strong>
+                                <p>Understands sender relationship, conversation history, and message urgency.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Platform Optimization</strong>
+                                <p>Adapts language for WhatsApp casual vs Outlook professional contexts.</p>
+                            </div>
+                        </div>
+                        <div class="ai-feature">
+                            <span class="check-icon">✓</span>
+                            <div>
+                                <strong>Tone Mastery</strong>
+                                <p>Generates authentic Professional, Friendly, Funny, or Flirty responses.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary">See AI in Action</button>
+                        <button class="btn btn-secondary" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">
+                            Schedule Technical Deep-Dive
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect for Every Situation</h2>
+                <p class="section-subtitle">From dating to business, we've got you covered</p>
+            </div>
+            <div class="use-cases-grid">
+                <div class="use-case">
+                    <div class="use-case-icon">💼</div>
+                    <h3>Business Professionals</h3>
+                    <p>Perfect Slack, Teams, and email responses. Maintain professionalism across all work communication.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">💑</div>
+                    <h3>Dating & Relationships</h3>
+                    <p>Craft charming, flirty responses for dating apps. Never run out of things to say.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">🎯</div>
+                    <h3>Sales Teams</h3>
+                    <p>Respond to leads instantly with personalized messages. Never miss a sales opportunity.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">🎧</div>
+                    <h3>Customer Support</h3>
+                    <p>Consistent, helpful responses to customer inquiries. Reduce response time by 80%.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">🌍</div>
+                    <h3>International Teams</h3>
+                    <p>Clear, professional English responses even if it's not your first language.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+                <div class="use-case">
+                    <div class="use-case-icon">⏰</div>
+                    <h3>Busy People</h3>
+                    <p>Reply in seconds when you don't have time to craft perfect messages.</p>
+                    <button class="btn btn-text">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Continue in next file... -->
+    <script src="script.js"></script>
+</body>
+</html>

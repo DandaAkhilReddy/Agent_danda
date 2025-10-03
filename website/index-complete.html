@@ -1,0 +1,450 @@
+<!-- Continuing from index.html... Add these sections before closing </body> tag -->
+
+<!-- Pricing Section -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <span class="badge-icon">💎</span>
+                <span>Simple, Transparent Pricing</span>
+            </div>
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-subtitle">Start free, upgrade when you're ready. Cancel anytime.</p>
+        </div>
+
+        <!-- Pricing Toggle -->
+        <div class="pricing-toggle">
+            <button class="pricing-option active" data-period="monthly">Monthly</button>
+            <button class="pricing-option" data-period="yearly">
+                Yearly
+                <span class="save-badge">Save 20%</span>
+            </button>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="pricing-grid">
+            <!-- Free Tier -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="plan-name">Free</h3>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="price-amount" data-monthly="0" data-yearly="0">0</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="plan-description">Perfect for trying out ReplyCopilot</p>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> 20 replies per day</li>
+                    <li><span class="check">✓</span> All 4 tone modes</li>
+                    <li><span class="check">✓</span> All 6 platforms</li>
+                    <li><span class="check">✓</span> Share Extension</li>
+                    <li><span class="check">✓</span> Custom Keyboard</li>
+                    <li><span class="check">✓</span> 7-day history</li>
+                    <li><span class="check">✓</span> Basic analytics</li>
+                </ul>
+                <button class="btn btn-secondary btn-large plan-cta">Get Started Free</button>
+            </div>
+
+            <!-- Pro Tier (Highlighted) -->
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <div class="pricing-header">
+                    <h3 class="plan-name">Pro</h3>
+                    <div class="plan-price">
+                        <span class="currency">$</span>
+                        <span class="price-amount" data-monthly="9.99" data-yearly="7.99">9.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                    <p class="plan-description">For power users who message a lot</p>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> <strong>Unlimited replies</strong></li>
+                    <li><span class="check">✓</span> All 4 tone modes</li>
+                    <li><span class="check">✓</span> All 6 platforms</li>
+                    <li><span class="check">✓</span> Share Extension</li>
+                    <li><span class="check">✓</span> Custom Keyboard</li>
+                    <li><span class="check">✓</span> <strong>Unlimited history</strong></li>
+                    <li><span class="check">✓</span> <strong>Advanced analytics</strong></li>
+                    <li><span class="check">✓</span> <strong>Priority processing</strong></li>
+                    <li><span class="check">✓</span> <strong>Custom tones</strong></li>
+                    <li><span class="check">✓</span> <strong>Export data</strong></li>
+                    <li><span class="check">✓</span> <strong>Priority support</strong></li>
+                </ul>
+                <button class="btn btn-primary btn-large plan-cta">Start Pro Trial</button>
+            </div>
+
+            <!-- Enterprise Tier -->
+            <div class="pricing-card">
+                <div class="pricing-header">
+                    <h3 class="plan-name">Enterprise</h3>
+                    <div class="plan-price">
+                        <span class="price-amount custom">Custom</span>
+                    </div>
+                    <p class="plan-description">For teams and organizations</p>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> Everything in Pro</li>
+                    <li><span class="check">✓</span> <strong>Team accounts</strong></li>
+                    <li><span class="check">✓</span> <strong>Shared tone templates</strong></li>
+                    <li><span class="check">✓</span> <strong>Usage dashboard</strong></li>
+                    <li><span class="check">✓</span> <strong>SSO integration</strong></li>
+                    <li><span class="check">✓</span> <strong>API access</strong></li>
+                    <li><span class="check">✓</span> <strong>Dedicated support</strong></li>
+                    <li><span class="check">✓</span> <strong>SLA guarantee</strong></li>
+                    <li><span class="check">✓</span> <strong>Custom deployment</strong></li>
+                </ul>
+                <button class="btn btn-secondary btn-large plan-cta" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">
+                    Contact Sales
+                </button>
+            </div>
+        </div>
+
+        <!-- Money Back Guarantee -->
+        <div class="guarantee">
+            <div class="guarantee-icon">🛡️</div>
+            <div class="guarantee-content">
+                <h3>30-Day Money-Back Guarantee</h3>
+                <p>Not satisfied? Get a full refund within 30 days, no questions asked.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Loved by Thousands</h2>
+            <p class="section-subtitle">See what our users are saying about ReplyCopilot</p>
+        </div>
+
+        <div class="testimonials-carousel">
+            <div class="testimonial active">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "ReplyCopilot has completely transformed how I handle customer support messages.
+                        I can respond 3x faster with perfectly crafted responses. It's like having a
+                        professional copywriter in my pocket!"
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👨‍💼</div>
+                    <div class="author-info">
+                        <div class="author-name">Alex Chen</div>
+                        <div class="author-title">Customer Support Manager</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "As someone who's not a native English speaker, ReplyCopilot helps me write
+                        professional business emails with confidence. The Professional tone mode is
+                        absolutely perfect for my needs."
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👩‍💻</div>
+                    <div class="author-info">
+                        <div class="author-name">Maria Garcia</div>
+                        <div class="author-title">Sales Executive</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "The Flirty tone mode is a game-changer for dating apps! I went from getting
+                        2-3 matches a week to 10+. My response rate has skyrocketed. Best $10/month
+                        I've ever spent."
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">🧑</div>
+                    <div class="author-info">
+                        <div class="author-name">Jordan Smith</div>
+                        <div class="author-title">Marketing Consultant</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial">
+                <div class="testimonial-content">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">
+                        "Privacy was my biggest concern, but knowing that screenshots are never stored
+                        put my mind at ease. The AI is incredibly smart and the replies feel natural,
+                        not robotic at all."
+                    </p>
+                </div>
+                <div class="testimonial-author">
+                    <div class="author-avatar">👨‍⚕️</div>
+                    <div class="author-info">
+                        <div class="author-name">Dr. Sarah Johnson</div>
+                        <div class="author-title">Healthcare Professional</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <button class="carousel-prev">‹</button>
+            <button class="carousel-next">›</button>
+
+            <!-- Indicators -->
+            <div class="carousel-indicators">
+                <span class="indicator active"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+                <span class="indicator"></span>
+            </div>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="social-stats">
+            <div class="social-stat">
+                <div class="social-stat-number">10,000+</div>
+                <div class="social-stat-label">Active Users</div>
+            </div>
+            <div class="social-stat">
+                <div class="social-stat-number">1M+</div>
+                <div class="social-stat-label">Replies Generated</div>
+            </div>
+            <div class="social-stat">
+                <div class="social-stat-number">4.9/5</div>
+                <div class="social-stat-label">App Store Rating</div>
+            </div>
+            <div class="social-stat">
+                <div class="social-stat-number">98%</div>
+                <div class="social-stat-label">Satisfaction Rate</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Everything you need to know about ReplyCopilot</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does ReplyCopilot work?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Simply take a screenshot of any conversation, share it to ReplyCopilot via iOS Share Sheet,
+                    choose your tone (Professional, Friendly, Funny, or Flirty), and get 3-5 smart reply suggestions
+                    in under 2 seconds. You can then copy or insert the reply using our custom keyboard.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is my data private and secure?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Absolutely! We have a strict zero data retention policy. Screenshots are processed in-memory
+                    only and immediately deleted after generating replies. We never store screenshots, message content,
+                    or any personally identifiable information. All data is encrypted in transit with TLS 1.3.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What messaging apps does it work with?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>ReplyCopilot works with ANY messaging app! We have specific optimizations for WhatsApp, iMessage,
+                    Instagram, Outlook, Slack, and Microsoft Teams, but it works universally with Facebook Messenger,
+                    Telegram, Signal, Discord, Twitter DMs, TikTok, Snapchat, email clients, SMS, and more.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I try it before paying?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes! We offer a generous free tier with 20 replies per day. No credit card required.
+                    You can upgrade to Pro ($9.99/month) anytime for unlimited replies and advanced features.
+                    We also offer a 30-day money-back guarantee on all paid plans.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How accurate are the AI-generated replies?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Very accurate! We use OpenAI's GPT-4o Vision, the most advanced multimodal AI model.
+                    It understands context, tone, relationship dynamics, and platform-specific communication styles.
+                    Our users report a 95%+ satisfaction rate with reply quality.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do I need to install anything besides the iOS app?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>No! Everything works through the iOS app, Share Extension, and optional custom keyboard.
+                    No browser extensions, no desktop software. Just install the app from the App Store and you're ready to go.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What's the difference between tones?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p><strong>Professional:</strong> Formal business language for work emails, Slack, Teams.<br>
+                    <strong>Friendly:</strong> Warm, casual tone for friends, family, social media.<br>
+                    <strong>Funny:</strong> Playful, humorous responses with jokes and wit.<br>
+                    <strong>Flirty:</strong> Charming, suggestive language for dating apps and romantic interests.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I cancel anytime?</h3>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, absolutely! Cancel your subscription anytime from the app settings or iTunes.
+                    No cancellation fees, no questions asked. You'll continue to have access until the end
+                    of your billing period, then automatically revert to the free tier.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="final-cta">
+    <div class="container">
+        <div class="final-cta-content">
+            <h2 class="final-cta-title">Ready to Transform Your Messaging?</h2>
+            <p class="final-cta-subtitle">
+                Join thousands of users who are saving time and crafting perfect replies with AI.
+                Start free, upgrade when you're ready.
+            </p>
+            <div class="final-cta-buttons">
+                <button class="btn btn-primary btn-large">
+                    <span>Download on App Store</span>
+                    <span class="btn-icon">→</span>
+                </button>
+                <button class="btn btn-secondary btn-large" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">
+                    <span class="btn-icon">📅</span>
+                    <span>Schedule a Demo</span>
+                </button>
+            </div>
+            <p class="final-cta-note">
+                ✓ No credit card required  ✓ 20 free replies/day  ✓ Cancel anytime
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <span class="logo-icon">🤖</span>
+                    <span class="logo-text">ReplyCopilot</span>
+                </div>
+                <p class="footer-description">
+                    AI-powered reply assistant that transforms screenshots into smart,
+                    contextual responses. Privacy-first, lightning-fast, universally compatible.
+                </p>
+                <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/DandaAkhilReddy/Agent_danda" target="_blank" class="social-link">GitHub</a>
+                </div>
+            </div>
+
+            <!-- Product Links -->
+            <div class="footer-col">
+                <h4 class="footer-title">Product</h4>
+                <ul class="footer-links">
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#">App Store</a></li>
+                    <li><a href="#">Changelog</a></li>
+                    <li><a href="#">Roadmap</a></li>
+                </ul>
+            </div>
+
+            <!-- Resources -->
+            <div class="footer-col">
+                <h4 class="footer-title">Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="https://github.com/DandaAkhilReddy/Agent_danda" target="_blank">GitHub</a></li>
+                    <li><a href="#">API Reference</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Status Page</a></li>
+                </ul>
+            </div>
+
+            <!-- Company -->
+            <div class="footer-col">
+                <h4 class="footer-title">Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com'});return false;">Contact</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-col">
+                <h4 class="footer-title">Stay Updated</h4>
+                <p class="newsletter-description">Get the latest updates, tips, and exclusive offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="footer-bottom">
+            <p class="copyright">© 2025 ReplyCopilot. All rights reserved.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Cookies</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button -->
+<button class="scroll-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+    ↑
+</button>
