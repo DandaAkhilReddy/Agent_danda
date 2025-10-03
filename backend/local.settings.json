@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "NODE_ENV": "development",
+    "AZURE_OPENAI_KEY": "bc08aca8a5604b7e9fa698504b9c11cb",
+    "AZURE_OPENAI_ENDPOINT": "https://eastus.api.cognitive.microsoft.com/",
+    "AZURE_OPENAI_DEPLOYMENT": "gpt-4o",
+    "AZURE_OPENAI_API_VERSION": "2024-02-15-preview",
+    "ALLOWED_ORIGINS": "http://localhost:3000,https://replycopilot.com",
+    "RATE_LIMIT_PER_MINUTE": "30",
+    "MAX_IMAGE_SIZE_MB": "10",
+    "ENABLE_DEBUG_LOGGING": "true"
+  },
+  "Host": {
+    "CORS": "*",
+    "CORSCredentials": false,
+    "LocalHttpPort": 7071
+  }
+}
