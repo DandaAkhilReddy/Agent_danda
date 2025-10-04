@@ -1143,9 +1143,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: '📱', title: 'iOS App', status: 'In Development', date: 'Launching Q2 2025', highlight: true },
-              { icon: '🤖', title: 'Android App', status: 'Coming Soon', date: 'Q3 2025', highlight: false },
-              { icon: '🌐', title: 'Browser Extension', status: 'Planned', date: 'Q4 2025', highlight: false },
+              { icon: '📱', title: 'iOS App', status: 'In Development', date: 'Coming Soon', highlight: true },
+              { icon: '🤖', title: 'Android App', status: 'Coming Soon', date: 'Coming Soon', highlight: false },
+              { icon: '🌐', title: 'Browser Extension', status: 'Planned', date: 'Coming Soon', highlight: false },
               { icon: '🔌', title: 'Developer API', status: 'Planned', date: '2025', highlight: false },
               { icon: '🌍', title: 'Multi-Language', status: 'Planned', date: '2025', highlight: false },
               { icon: '🎨', title: 'Custom AI Training', status: 'Research', date: '2026', highlight: false },
@@ -1179,7 +1179,7 @@ export default function Home() {
       <section className="py-32 bg-gradient-to-r from-accent via-primary to-neon text-white text-center">
         <div className="max-w-4xl mx-auto px-6">
           <h2 className="text-5xl md:text-6xl font-black mb-6 font-heading">Ready to Transform Your Messaging?</h2>
-          <p className="text-2xl mb-12 opacity-95">Join 10,000+ people on the waitlist. Launching March 2025.</p>
+          <p className="text-2xl mb-12 opacity-95">Join 10,000+ people on the waitlist. Coming Soon!</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <button className="px-12 py-6 rounded-2xl font-bold text-lg bg-white text-primary hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
               Join Waitlist Now
@@ -1188,7 +1188,7 @@ export default function Home() {
               Watch Full Demo
             </button>
           </div>
-          <p className="mt-8 text-lg opacity-90">🎉 No credit card required • Privacy-first guarantee • iOS launching Q2 2025</p>
+          <p className="mt-8 text-lg opacity-90">🎉 No credit card required • Privacy-first guarantee • Coming Soon</p>
         </div>
       </section>
 
