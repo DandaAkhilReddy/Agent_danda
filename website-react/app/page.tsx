@@ -703,77 +703,23 @@ export default function Home() {
       {/* Pricing */}
       <section id="pricing" className="py-32 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black mb-4 text-primary font-heading">Simple Pricing</h2>
-            <p className="text-xl text-gray-600">Start free, upgrade when you need more</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: 'Free',
-                price: '$0',
-                period: 'forever',
-                features: ['20 replies/day', '4 tone modes', 'All platforms', 'Privacy-first'],
-                cta: 'Get Started Free',
-                popular: false
-              },
-              {
-                name: 'Pro',
-                price: '$9.99',
-                period: '/month',
-                features: ['Unlimited replies', '4 tone modes + custom', 'Priority AI processing', 'Email support'],
-                cta: 'Start 7-Day Trial',
-                popular: true
-              },
-              {
-                name: 'Enterprise',
-                price: 'Custom',
-                period: '',
-                features: ['Everything in Pro', 'Team management', 'API access', 'Dedicated support'],
-                cta: 'Contact Sales',
-                popular: false
-              },
-            ].map((plan, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                viewport={{ once: true }}
-                className={`relative p-8 rounded-3xl transition-all duration-300 ${
-                  plan.popular
-                    ? 'bg-gradient-to-br from-accent to-neon text-white scale-105 shadow-2xl'
-                    : 'bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl'
-                }`}
-              >
-                {plan.popular && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-6 py-2 rounded-full bg-primary text-white font-bold text-sm">
-                    ⭐ MOST POPULAR
-                  </div>
-                )}
-                <h3 className="text-2xl font-bold mb-4 font-heading">{plan.name}</h3>
-                <div className="mb-6">
-                  <span className="text-6xl font-black font-accent">{plan.price}</span>
-                  <span className="text-lg opacity-75">{plan.period}</span>
-                </div>
-                <ul className="space-y-3 mb-8">
-                  {plan.features.map((feature, j) => (
-                    <li key={j} className="flex items-start gap-2">
-                      <span className="text-xl">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-                <button className={`w-full px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 ${
-                  plan.popular
-                    ? 'bg-white text-primary hover:shadow-xl hover:-translate-y-1'
-                    : 'bg-gradient-to-r from-accent to-neon text-white hover:shadow-xl hover:-translate-y-1'
-                }`}>
-                  {plan.cta}
-                </button>
-              </motion.div>
-            ))}
+          <div className="text-center">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
+              viewport={{ once: true }}
+              className="inline-block"
+            >
+              <h2 className="text-6xl md:text-7xl font-black mb-6 text-primary font-heading">Pricing</h2>
+              <div className="inline-flex items-center gap-4 px-12 py-6 rounded-3xl bg-gradient-to-r from-accent/10 to-neon/10 border-2 border-accent/30">
+                <span className="text-5xl">🎯</span>
+                <span className="text-3xl font-bold text-accent font-heading">Coming Soon</span>
+              </div>
+              <p className="text-xl text-gray-600 mt-8 max-w-2xl mx-auto">
+                We're finalizing our pricing plans to bring you the best value. Join the waitlist to get notified when pricing is announced!
+              </p>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -1195,7 +1141,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="bg-primary text-white py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-4 gap-12 mb-12">
+          <div className="grid md:grid-cols-2 gap-12 mb-12 max-w-3xl mx-auto">
             <div>
               <div className="flex items-center gap-3 mb-4">
                 <img
@@ -1214,26 +1160,7 @@ export default function Home() {
                 <li><a href="#how-it-works" className="hover:text-neon transition">How It Works</a></li>
                 <li><a href="#features" className="hover:text-neon transition">Features</a></li>
                 <li><a href="#pricing" className="hover:text-neon transition">Pricing</a></li>
-                <li><a href="#demo" className="hover:text-neon transition">Try Demo</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4 font-heading">Company</h4>
-              <ul className="space-y-2 text-sm opacity-75">
-                <li><a href="#" className="hover:text-neon transition">About Us</a></li>
-                <li><a href="#" className="hover:text-neon transition">Blog</a></li>
-                <li><a href="#" className="hover:text-neon transition">Careers</a></li>
-                <li><a href="#" className="hover:text-neon transition">Contact</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4 font-heading">Legal</h4>
-              <ul className="space-y-2 text-sm opacity-75">
-                <li><a href="#" className="hover:text-neon transition">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-neon transition">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-neon transition">Security</a></li>
+                <li><a href="#waitlist" className="hover:text-neon transition">Join Waitlist</a></li>
               </ul>
             </div>
           </div>
@@ -1243,7 +1170,7 @@ export default function Home() {
               {/* Copyright & LinkedIn */}
               <div className="flex items-center gap-3">
                 <p className="text-sm opacity-75">
-                  © 2025 AgentChains.ai. Built with ❤️ and GPT-4o Vision.
+                  © 2025 AgentChains.ai. Built by Akhil Reddy Danda.
                 </p>
                 <a
                   href="https://www.linkedin.com/in/akhil-reddy-danda-1a74b214b/"
