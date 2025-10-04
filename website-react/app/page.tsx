@@ -618,8 +618,90 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Enterprise Infrastructure - Temporal.io */}
+      <section className="py-32 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <div className="inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-blue-500/10 to-purple-500/10 border-2 border-blue-500/20 mb-8">
+              <span className="text-4xl">⚡</span>
+              <span className="text-2xl font-black text-gradient font-heading">Powered by Temporal.io</span>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-black mb-4 text-primary font-heading">Enterprise-Grade Infrastructure</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Built on the same workflow orchestration platform trusted by <strong className="text-accent">NVIDIA, Salesforce, and Twilio</strong>
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-8 mb-16">
+            {[
+              { icon: '🚀', title: '99.99% Uptime', desc: 'Enterprise SLA with automatic failover' },
+              { icon: '⚡', title: 'Zero Lost Requests', desc: 'Durable execution guarantees every request completes' },
+              { icon: '🔄', title: 'Auto-Recovery <1s', desc: 'Instant retry and recovery on any failure' },
+              { icon: '📊', title: 'Full Visibility', desc: 'Track every workflow execution in real-time' },
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ delay: i * 0.1 }}
+                viewport={{ once: true }}
+                className="text-center p-8 rounded-3xl bg-gradient-to-br from-gray-50 to-gray-100 hover:shadow-xl transition-all duration-300"
+              >
+                <div className="text-6xl mb-4">{item.icon}</div>
+                <h3 className="text-2xl font-bold mb-2 text-primary font-heading">{item.title}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="max-w-4xl mx-auto bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-1 rounded-3xl">
+            <div className="bg-white rounded-3xl p-12">
+              <div className="text-center mb-8">
+                <h3 className="text-3xl font-black mb-4 text-primary font-heading">Why Temporal.io?</h3>
+                <p className="text-lg text-gray-600">The world's most reliable workflow orchestration platform</p>
+              </div>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Automatic State Preservation</h4>
+                    <p className="text-sm text-gray-600">Workflows capture state at every step and can recover from any failure</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Battle-Tested at Scale</h4>
+                    <p className="text-sm text-gray-600">20+ years of development experience from AWS & Azure engineers</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Zero-Downtime Deployments</h4>
+                    <p className="text-sm text-gray-600">Update code without interrupting running workflows</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <span className="text-2xl">✓</span>
+                  <div>
+                    <h4 className="font-bold text-primary mb-1">Guaranteed Execution</h4>
+                    <p className="text-sm text-gray-600">Every screenshot-to-reply workflow completes, no matter what</p>
+                  </div>
+                </div>
+              </div>
+              <div className="mt-8 pt-8 border-t border-gray-200 text-center">
+                <p className="text-sm text-gray-500 italic">
+                  "Temporal does to backend and infra, what React did to frontend" - <strong>Guillermo Rauch, CEO of Vercel</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Pricing */}
-      <section id="pricing" className="py-32 bg-white">
+      <section id="pricing" className="py-32 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <h2 className="text-5xl md:text-6xl font-black mb-4 text-primary font-heading">Simple Pricing</h2>
