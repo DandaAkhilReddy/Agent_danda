@@ -1143,9 +1143,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { icon: '📱', title: 'iOS App', status: 'In Development', date: 'Coming Soon', highlight: true },
-              { icon: '🤖', title: 'Android App', status: 'Coming Soon', date: 'Coming Soon', highlight: false },
-              { icon: '🌐', title: 'Browser Extension', status: 'Planned', date: 'Coming Soon', highlight: false },
+              { icon: '📱', title: 'iOS App', status: 'In Development', date: '', highlight: true },
+              { icon: '🤖', title: 'Android App', status: 'Coming Soon', date: '', highlight: false },
+              { icon: '🌐', title: 'Browser Extension', status: 'Coming Soon', date: '', highlight: false },
               { icon: '🔌', title: 'Developer API', status: 'Planned', date: '2025', highlight: false },
               { icon: '🌍', title: 'Multi-Language', status: 'Planned', date: '2025', highlight: false },
               { icon: '🎨', title: 'Custom AI Training', status: 'Research', date: '2026', highlight: false },
@@ -1161,9 +1161,9 @@ export default function Home() {
                 }`}
               >
                 <div className="text-6xl mb-4">{item.icon}</div>
-                <h3 className="text-2xl font-bold mb-2 font-heading">{item.title}</h3>
-                <p className="text-sm opacity-75 mb-2">{item.status}</p>
-                <p className="text-xs opacity-50">{item.date}</p>
+                <h3 className="text-2xl font-bold mb-3 font-heading">{item.title}</h3>
+                <p className="text-sm opacity-75">{item.status}</p>
+                {item.date && <p className="text-xs opacity-50 mt-1">{item.date}</p>}
                 {item.highlight && (
                   <div className="mt-4 px-4 py-2 rounded-lg bg-neon/20 border border-neon">
                     <p className="text-sm font-bold text-neon">🚀 Active Development</p>
