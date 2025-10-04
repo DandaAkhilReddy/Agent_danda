@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow anyone to write to waitlist-submissions collection
+    // This is safe because it's one-way data collection
+    match /waitlist-submissions/{document} {
+      // Allow public to create new submissions
+      allow create: if request.time < timestamp.date(2026, 12, 31);
+
+      // No public reads - only admin can read via Firebase Console
+      allow read: if false;
+
+      // No updates or deletes from public
+      allow update, delete: if false;
+    }
+
+    // Lock down all other collections
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
