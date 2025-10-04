@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore'
 import { db } from '../lib/firebase'
+import emailjs from '@emailjs/browser'
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false)
@@ -16,13 +17,19 @@ export default function Home() {
     name: '',
     email: '',
     phone: '',
+    company: '',
+    role: '',
     usingChatGPT: '',
     struggles: [] as string[],
     strugglesOther: '',
+    biggestPainPoint: '',
     apps: [] as string[],
     appsOther: '',
     ideas: '',
-    timeSpent: ''
+    timeSpent: '',
+    willingToPay: '',
+    referralSource: '',
+    betaTester: false
   })
   const [formSubmitted, setFormSubmitted] = useState(false)
   const [formSubmitting, setFormSubmitting] = useState(false)
@@ -91,6 +98,34 @@ export default function Home() {
       })
 
       console.log('Form submitted successfully to Firebase:', formData)
+
+      // Send welcome email via EmailJS
+      try {
+        const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || ''
+        const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || ''
+        const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+
+        if (serviceId && templateId && publicKey) {
+          await emailjs.send(
+            serviceId,
+            templateId,
+            {
+              to_name: formData.name,
+              to_email: formData.email,
+              from_name: 'AgentChains.ai Team',
+              reply_to: 'hello@agentchains.ai',
+            },
+            publicKey
+          )
+          console.log('Welcome email sent successfully!')
+        } else {
+          console.warn('EmailJS not configured - skipping welcome email')
+        }
+      } catch (emailError) {
+        console.error('Error sending welcome email:', emailError)
+        // Don't fail the whole form submission if email fails
+      }
+
       setFormSubmitted(true)
 
       // Reset form after 5 seconds
@@ -100,13 +135,19 @@ export default function Home() {
           name: '',
           email: '',
           phone: '',
+          company: '',
+          role: '',
           usingChatGPT: '',
           struggles: [],
           strugglesOther: '',
+          biggestPainPoint: '',
           apps: [],
           appsOther: '',
           ideas: '',
-          timeSpent: ''
+          timeSpent: '',
+          willingToPay: '',
+          referralSource: '',
+          betaTester: false
         })
       }, 5000)
     } catch (error) {
@@ -726,7 +767,7 @@ export default function Home() {
               </div>
 
               {/* Phone (optional) */}
-              <div className="mb-8">
+              <div className="mb-6">
                 <label className="block text-sm font-bold mb-2">Phone (Optional)</label>
                 <input
                   type="tel"
@@ -735,6 +776,30 @@ export default function Home() {
                   className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-neon focus:outline-none transition"
                   placeholder="+1 (555) 123-4567"
                 />
+              </div>
+
+              {/* Company & Role */}
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div>
+                  <label className="block text-sm font-bold mb-2">Company (Optional)</label>
+                  <input
+                    type="text"
+                    value={formData.company}
+                    onChange={(e) => setFormData({...formData, company: e.target.value})}
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-neon focus:outline-none transition"
+                    placeholder="Your company"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-bold mb-2">Role (Optional)</label>
+                  <input
+                    type="text"
+                    value={formData.role}
+                    onChange={(e) => setFormData({...formData, role: e.target.value})}
+                    className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-neon focus:outline-none transition"
+                    placeholder="Job title or role"
+                  />
+                </div>
               </div>
 
               {/* ChatGPT Screenshot Usage */}
@@ -799,6 +864,21 @@ export default function Home() {
                 </div>
               </div>
 
+              {/* Biggest Pain Point */}
+              <div className="mb-8">
+                <label className="block text-sm font-bold mb-3">
+                  What's your #1 messaging frustration right now? *
+                </label>
+                <textarea
+                  required
+                  value={formData.biggestPainPoint}
+                  onChange={(e) => setFormData({...formData, biggestPainPoint: e.target.value})}
+                  rows={4}
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-neon focus:outline-none transition resize-none"
+                  placeholder="Tell us the one thing that frustrates you most about messaging (e.g., 'Spending 2 hours daily crafting LinkedIn responses')"
+                />
+              </div>
+
               {/* Apps Used */}
               <div className="mb-8">
                 <label className="block text-sm font-bold mb-3">
@@ -854,6 +934,55 @@ export default function Home() {
                 </select>
               </div>
 
+              {/* Willing to Pay */}
+              <div className="mb-8">
+                <label className="block text-sm font-bold mb-3">
+                  Would you pay $9.99/month for AgentChains.ai? *
+                </label>
+                <div className="space-y-3">
+                  {[
+                    { value: 'yes', label: 'Yes, absolutely!' },
+                    { value: 'maybe', label: 'Maybe, need to see it first' },
+                    { value: 'no', label: 'No, prefer free version' },
+                  ].map((option) => (
+                    <label key={option.value} className="flex items-center gap-3 cursor-pointer group">
+                      <input
+                        type="radio"
+                        name="willingToPay"
+                        value={option.value}
+                        checked={formData.willingToPay === option.value}
+                        onChange={(e) => setFormData({...formData, willingToPay: e.target.value})}
+                        className="w-5 h-5 text-neon focus:ring-neon"
+                        required
+                      />
+                      <span className="group-hover:text-neon transition">{option.label}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Referral Source */}
+              <div className="mb-8">
+                <label className="block text-sm font-bold mb-3">
+                  How did you hear about AgentChains.ai? *
+                </label>
+                <select
+                  required
+                  value={formData.referralSource}
+                  onChange={(e) => setFormData({...formData, referralSource: e.target.value})}
+                  className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white focus:border-neon focus:outline-none transition"
+                >
+                  <option value="" className="bg-primary">Select...</option>
+                  <option value="twitter" className="bg-primary">Twitter/X</option>
+                  <option value="linkedin" className="bg-primary">LinkedIn</option>
+                  <option value="friend" className="bg-primary">Friend or colleague</option>
+                  <option value="google" className="bg-primary">Google search</option>
+                  <option value="reddit" className="bg-primary">Reddit</option>
+                  <option value="youtube" className="bg-primary">YouTube</option>
+                  <option value="other" className="bg-primary">Other</option>
+                </select>
+              </div>
+
               {/* Ideas */}
               <div className="mb-8">
                 <label className="block text-sm font-bold mb-3">
@@ -866,6 +995,21 @@ export default function Home() {
                   className="w-full px-4 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:border-neon focus:outline-none transition resize-none"
                   placeholder="Share your thoughts, feature requests, or any ideas you have to make AgentChains.ai better..."
                 />
+              </div>
+
+              {/* Beta Tester */}
+              <div className="mb-8">
+                <label className="flex items-center gap-3 cursor-pointer group">
+                  <input
+                    type="checkbox"
+                    checked={formData.betaTester}
+                    onChange={(e) => setFormData({...formData, betaTester: e.target.checked})}
+                    className="w-5 h-5 rounded text-neon focus:ring-neon"
+                  />
+                  <span className="font-bold group-hover:text-neon transition">
+                    🚀 I want early beta access and am willing to provide feedback!
+                  </span>
+                </label>
               </div>
 
               {/* Submit Button */}

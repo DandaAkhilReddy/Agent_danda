@@ -192,9 +192,126 @@ When deploying to production (Vercel, Azure, etc.):
 
 ---
 
+## 📧 EmailJS Setup (Welcome Emails)
+
+### Step 1: Create EmailJS Account
+
+1. Go to [EmailJS](https://www.emailjs.com/)
+2. Click "Sign Up" (it's free - 200 emails/month)
+3. Verify your email address
+
+### Step 2: Add Email Service
+
+1. Go to **Email Services** in the dashboard
+2. Click "Add New Service"
+3. Choose your email provider:
+   - **Gmail** (recommended for testing)
+   - Outlook
+   - Yahoo
+   - Custom SMTP
+4. Follow the connection wizard
+5. **Copy your Service ID** (e.g., `service_abc123`)
+
+### Step 3: Create Email Template
+
+1. Go to **Email Templates** in the dashboard
+2. Click "Create New Template"
+3. Template Name: "Welcome to AgentChains Waitlist"
+4. Use these template variables:
+
+```
+Subject: Welcome to AgentChains.ai! 🎉
+
+Hi {{to_name}},
+
+Thank you for joining the AgentChains.ai waitlist!
+
+You're now part of an exclusive group getting early access to the future of AI-powered messaging.
+
+What happens next?
+✅ We'll notify you as soon as beta access is available
+✅ You'll get exclusive updates on new features
+✅ Priority access to launch pricing
+
+In the meantime, follow us:
+🐦 Twitter: @agentchainsai
+💼 LinkedIn: AgentChains.ai
+
+Questions? Just reply to this email!
+
+Best regards,
+The AgentChains.ai Team
+https://agentchains.ai
+```
+
+5. **Save** and copy your **Template ID** (e.g., `template_xyz789`)
+
+### Step 4: Get Public Key
+
+1. Go to **Account** > **General**
+2. Find your **Public Key** (e.g., `abc123XYZ`)
+3. Copy it
+
+### Step 5: Configure Environment Variables
+
+1. Open `.env.local`
+2. Add your EmailJS credentials:
+
+```env
+NEXT_PUBLIC_EMAILJS_SERVICE_ID=service_abc123
+NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=template_xyz789
+NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=abc123XYZ
+```
+
+3. Restart the dev server:
+```bash
+npm run dev
+```
+
+### Step 6: Test Welcome Email
+
+1. Go to **http://localhost:3000**
+2. Fill out the waitlist form with your email
+3. Submit the form
+4. Check your inbox for the welcome email!
+
+---
+
+## ✅ Welcome Email Features
+
+- ✅ Sent automatically on form submission
+- ✅ Personalized with user's name
+- ✅ Professional branded template
+- ✅ 200 free emails/month
+- ✅ No backend code required
+- ✅ Works with Firebase free tier
+
+---
+
+## 🐛 EmailJS Troubleshooting
+
+### Email not sending?
+1. Check browser console for errors
+2. Verify all 3 environment variables are set
+3. Test the template in EmailJS dashboard ("Test It" button)
+4. Check EmailJS quota (200/month on free tier)
+
+### Template variables not working?
+- Variable format: `{{variable_name}}`
+- Available variables: `to_name`, `to_email`, `from_name`, `reply_to`
+- Test template in EmailJS dashboard first
+
+### Gmail not working?
+- Enable "Less secure app access" in Gmail settings
+- Or use "App Password" for better security
+- Alternative: Use Outlook or custom SMTP
+
+---
+
 ## 📞 Need Help?
 
 Check out:
 - [Firebase Documentation](https://firebase.google.com/docs)
 - [Firestore Security Rules](https://firebase.google.com/docs/firestore/security/get-started)
+- [EmailJS Documentation](https://www.emailjs.com/docs/)
 - [Next.js Environment Variables](https://nextjs.org/docs/basic-features/environment-variables)
