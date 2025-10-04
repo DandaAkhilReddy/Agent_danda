@@ -1158,7 +1158,7 @@ export default function Home() {
 
           <div className="border-t border-white/10 pt-8 text-center">
             <p className="text-sm opacity-75">
-              © 2025 ReplyCopilot. Built with ❤️ and GPT-4o Vision.
+              © 2025 AgentChains.ai. Built with ❤️ and GPT-4o Vision.
             </p>
           </div>
         </div>
