@@ -1,0 +1,53 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern chain link design with AI gradient -->
+  <defs>
+    <linearGradient id="chainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3c00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#adff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#04070d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#adff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff3c00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Chain link 1 (left) -->
+  <path d="M 50 80 A 20 20 0 0 1 50 120 A 20 20 0 0 1 50 80 Z M 50 90 A 10 10 0 0 0 50 110 A 10 10 0 0 0 50 90 Z"
+        fill="url(#chainGradient)" opacity="0.9"/>
+
+  <!-- Chain link 2 (center) - AI brain/circuit pattern -->
+  <circle cx="100" cy="100" r="25" fill="none" stroke="url(#accentGradient)" stroke-width="8"/>
+  <circle cx="100" cy="100" r="10" fill="url(#accentGradient)"/>
+
+  <!-- Neural network nodes -->
+  <circle cx="85" cy="85" r="4" fill="#adff00"/>
+  <circle cx="115" cy="85" r="4" fill="#adff00"/>
+  <circle cx="85" cy="115" r="4" fill="#adff00"/>
+  <circle cx="115" cy="115" r="4" fill="#adff00"/>
+
+  <!-- Connecting lines -->
+  <line x1="85" y1="85" x2="100" y2="100" stroke="#adff00" stroke-width="2" opacity="0.6"/>
+  <line x1="115" y1="85" x2="100" y2="100" stroke="#adff00" stroke-width="2" opacity="0.6"/>
+  <line x1="85" y1="115" x2="100" y2="100" stroke="#adff00" stroke-width="2" opacity="0.6"/>
+  <line x1="115" y1="115" x2="100" y2="100" stroke="#adff00" stroke-width="2" opacity="0.6"/>
+
+  <!-- Chain link 3 (right) -->
+  <path d="M 150 80 A 20 20 0 0 1 150 120 A 20 20 0 0 1 150 80 Z M 150 90 A 10 10 0 0 0 150 110 A 10 10 0 0 0 150 90 Z"
+        fill="url(#chainGradient)" opacity="0.9"/>
+
+  <!-- Connection links between chains -->
+  <rect x="70" y="95" width="15" height="10" rx="5" fill="url(#chainGradient)" opacity="0.8"/>
+  <rect x="115" y="95" width="15" height="10" rx="5" fill="url(#chainGradient)" opacity="0.8"/>
+
+  <!-- AI spark accent -->
+  <circle cx="100" cy="60" r="3" fill="#adff00">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="90" cy="140" r="2" fill="#ff3c00">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="110" cy="140" r="2" fill="#ff3c00">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+</svg>

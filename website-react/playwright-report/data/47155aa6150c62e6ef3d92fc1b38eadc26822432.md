@@ -1,0 +1,457 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - navigation [ref=e3]:
+      - generic [ref=e5]:
+        - generic [ref=e6]:
+          - generic [ref=e7]: ⚡
+          - generic [ref=e8]: ReplyCopilot
+        - generic [ref=e9]:
+          - link "How It Works" [ref=e10] [cursor=pointer]:
+            - /url: "#how-it-works"
+          - link "Demo" [ref=e11] [cursor=pointer]:
+            - /url: "#demo"
+          - link "Pricing" [ref=e12] [cursor=pointer]:
+            - /url: "#pricing"
+        - link "Join Waitlist" [ref=e14] [cursor=pointer]:
+          - /url: "#waitlist"
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]: 💎
+        - generic [ref=e22]: Powered by GPT-4o Vision • $1T Messaging Industry • Privacy-First
+      - heading "Screenshot. AI Analyzes. Reply Ready." [level=1] [ref=e23]:
+        - text: Screenshot. AI Analyzes.
+        - generic [ref=e24]: Reply Ready.
+      - paragraph [ref=e25]: Take a screenshot of ANY conversation. Get the perfect AI-powered reply instantly copied to your clipboard. Just paste. Works everywhere.
+      - generic [ref=e26]:
+        - link "Try Live Demo →" [ref=e27] [cursor=pointer]:
+          - /url: "#demo"
+          - generic [ref=e28] [cursor=pointer]: Try Live Demo
+          - generic [ref=e29] [cursor=pointer]: →
+        - button "▶ Watch 15s Demo" [ref=e30] [cursor=pointer]:
+          - generic [ref=e31] [cursor=pointer]: ▶
+          - generic [ref=e32] [cursor=pointer]: Watch 15s Demo
+      - generic [ref=e33]:
+        - generic [ref=e34]:
+          - generic [ref=e35]: < 2s
+          - generic [ref=e36]: Response Time
+        - generic [ref=e37]:
+          - generic [ref=e38]: ∞
+          - generic [ref=e39]: Works Everywhere
+        - generic [ref=e40]:
+          - generic [ref=e41]: 100%
+          - generic [ref=e42]: Private & Secure
+        - generic [ref=e43]:
+          - generic [ref=e44]: $1T
+          - generic [ref=e45]: Industry
+    - generic [ref=e47]:
+      - generic [ref=e48]:
+        - heading "How It Works" [level=2] [ref=e49]
+        - paragraph [ref=e50]: Three simple steps. No apps to open. No typing.
+      - generic [ref=e51]:
+        - generic [ref=e52]:
+          - generic [ref=e53]: "1"
+          - generic [ref=e54]: 📸
+          - heading "Screenshot Any Conversation" [level=3] [ref=e55]
+          - paragraph [ref=e56]: Just take a screenshot like you normally do. Works with WhatsApp, iMessage, Instagram, LinkedIn, Email—literally any app on your phone.
+          - paragraph [ref=e58]: Don't even think about what app it is
+        - generic [ref=e59]:
+          - generic [ref=e60]: "2"
+          - generic [ref=e61]: 🤖
+          - heading "AI Understands Everything" [level=3] [ref=e62]
+          - paragraph [ref=e63]: GPT-4o Vision analyzes the conversation context, app background, relationship tone, and urgency to generate the perfect reply.
+          - paragraph [ref=e65]: Professional for LinkedIn, casual for WhatsApp
+        - generic [ref=e66]:
+          - generic [ref=e67]: "3"
+          - generic [ref=e68]: ✨
+          - heading "Reply Ready to Paste" [level=3] [ref=e69]
+          - paragraph [ref=e70]: Perfect reply automatically copied to your clipboard. Just open your app and paste. That's it. Under 2 seconds total.
+          - paragraph [ref=e72]: Works everywhere. Every time.
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - heading "Context-Aware Intelligence" [level=2] [ref=e76]
+        - paragraph [ref=e77]: AI that understands the app, the vibe, and the situation
+      - generic [ref=e78]:
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - heading "LinkedIn Message" [level=3] [ref=e81]
+            - paragraph [ref=e82]: 🎯 Professional tone detected
+          - paragraph [ref=e84]: "\"Thank you for the connection! I'd love to discuss how we can collaborate on this initiative.\""
+        - generic [ref=e85]:
+          - generic [ref=e86]:
+            - heading "WhatsApp Group" [level=3] [ref=e87]
+            - paragraph [ref=e88]: 😄 Casual & fun detected
+          - paragraph [ref=e90]: "\"Haha that's awesome! 😂 Count me in! What time should I be there?\""
+        - generic [ref=e91]:
+          - generic [ref=e92]:
+            - heading "Work Slack" [level=3] [ref=e93]
+            - paragraph [ref=e94]: 💼 Professional but friendly
+          - paragraph [ref=e96]: "\"Thanks for the update! I'll have that ready by EOD. Let me know if you need anything else!\""
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - heading "Dating App" [level=3] [ref=e99]
+            - paragraph [ref=e100]: 💫 Flirty & charming
+          - paragraph [ref=e102]: "\"I was hoping you'd ask! 😊 Coffee sounds perfect. How about Saturday?\""
+    - generic [ref=e105]:
+      - generic [ref=e106]:
+        - generic [ref=e107]: 💎
+        - generic [ref=e108]: Trillion Dollar Industry
+      - heading "The Future of Communication is AI-Powered" [level=3] [ref=e109]
+      - paragraph [ref=e110]:
+        - text: With
+        - strong [ref=e111]: 5.3 billion
+        - text: people using messaging apps daily, the communication industry generates
+        - strong [ref=e112]: over $1.2 trillion
+        - text: in value annually. ReplyCopilot leverages enterprise-grade GPT-4o Vision AI to revolutionize how billions communicate across all platforms.
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]: $1.2T
+          - generic [ref=e116]: Industry Value
+        - generic [ref=e117]:
+          - generic [ref=e118]: 5.3B
+          - generic [ref=e119]: Daily Users
+        - generic [ref=e120]:
+          - generic [ref=e121]: 100B+
+          - generic [ref=e122]: Messages/Day
+        - generic [ref=e123]:
+          - generic [ref=e124]: 30min
+          - generic [ref=e125]: Saved Daily
+    - generic [ref=e127]:
+      - generic [ref=e128]:
+        - heading "Works Everywhere" [level=2] [ref=e129]
+        - paragraph [ref=e130]: Don't even think about what app it is
+      - generic [ref=e131]:
+        - generic [ref=e132]:
+          - generic [ref=e133]: 💬
+          - paragraph [ref=e134]: WhatsApp
+        - generic [ref=e135]:
+          - generic [ref=e136]: 💬
+          - paragraph [ref=e137]: iMessage
+        - generic [ref=e138]:
+          - generic [ref=e139]: 📸
+          - paragraph [ref=e140]: Instagram
+        - generic [ref=e141]:
+          - generic [ref=e142]: 💼
+          - paragraph [ref=e143]: LinkedIn
+        - generic [ref=e144]:
+          - generic [ref=e145]: 📧
+          - paragraph [ref=e146]: Email
+        - generic [ref=e147]:
+          - generic [ref=e148]: 💬
+          - paragraph [ref=e149]: Slack
+        - generic [ref=e150]:
+          - generic [ref=e151]: 🎮
+          - paragraph [ref=e152]: Discord
+        - generic [ref=e153]:
+          - generic [ref=e154]: ✈️
+          - paragraph [ref=e155]: Telegram
+        - generic [ref=e156]:
+          - generic [ref=e157]: ❤️
+          - paragraph [ref=e158]: Tinder
+        - generic [ref=e159]:
+          - generic [ref=e160]: 🐦
+          - paragraph [ref=e161]: X (Twitter)
+        - generic [ref=e162]:
+          - generic [ref=e163]: 👥
+          - paragraph [ref=e164]: Teams
+        - generic [ref=e165]:
+          - generic [ref=e166]: ✨
+          - paragraph [ref=e167]: Any App
+      - paragraph [ref=e169]:
+        - text: ReplyCopilot automatically detects the app, analyzes the conversation context, and adapts the tone.
+        - strong [ref=e170]: Professional for LinkedIn. Casual for WhatsApp. Charming for dating apps.
+    - generic [ref=e172]:
+      - generic [ref=e173]:
+        - heading "Try It Yourself" [level=2] [ref=e174]
+        - paragraph [ref=e175]: Interactive demo with mock data - No sign-up required
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - heading "Choose Your Tone" [level=3] [ref=e178]
+          - generic [ref=e179]:
+            - generic [ref=e180]: 🎭 Reply Tone
+            - generic [ref=e181]:
+              - button "Professional" [ref=e182] [cursor=pointer]
+              - button "Friendly" [ref=e183] [cursor=pointer]
+              - button "Funny" [ref=e184] [cursor=pointer]
+              - button "Flirty" [ref=e185] [cursor=pointer]
+          - button "✨ Generate Smart Replies" [ref=e186] [cursor=pointer]
+        - generic [ref=e187]:
+          - heading "Your Smart Replies" [level=3] [ref=e188]
+          - generic [ref=e189]:
+            - generic [ref=e190]: 🤖
+            - paragraph [ref=e191]: Click "Generate" to see AI magic!
+    - generic [ref=e193]:
+      - generic [ref=e194]:
+        - heading "Privacy-First Design" [level=2] [ref=e195]
+        - paragraph [ref=e196]: Your conversations are yours. Period.
+      - generic [ref=e197]:
+        - generic [ref=e198]:
+          - generic [ref=e199]: 🔒
+          - heading "Zero Data Retention" [level=3] [ref=e200]
+          - paragraph [ref=e201]: Screenshots processed in-memory, never stored
+        - generic [ref=e202]:
+          - generic [ref=e203]: 🛡️
+          - heading "End-to-End Encrypted" [level=3] [ref=e204]
+          - paragraph [ref=e205]: Your conversations stay 100% private
+        - generic [ref=e206]:
+          - generic [ref=e207]: 🚫
+          - heading "No Tracking" [level=3] [ref=e208]
+          - paragraph [ref=e209]: We don't log, analyze, or sell your data
+        - generic [ref=e210]:
+          - generic [ref=e211]: ✅
+          - heading "SOC 2 Compliant" [level=3] [ref=e212]
+          - paragraph [ref=e213]: Enterprise-grade security standards
+    - generic [ref=e215]:
+      - generic [ref=e216]:
+        - heading "Simple Pricing" [level=2] [ref=e217]
+        - paragraph [ref=e218]: Start free, upgrade when you need more
+      - generic [ref=e219]:
+        - generic [ref=e220]:
+          - heading "Free" [level=3] [ref=e221]
+          - generic [ref=e222]:
+            - generic [ref=e223]: $0
+            - generic [ref=e224]: forever
+          - list [ref=e225]:
+            - listitem [ref=e226]:
+              - generic [ref=e227]: ✓
+              - generic [ref=e228]: 20 replies/day
+            - listitem [ref=e229]:
+              - generic [ref=e230]: ✓
+              - generic [ref=e231]: 4 tone modes
+            - listitem [ref=e232]:
+              - generic [ref=e233]: ✓
+              - generic [ref=e234]: All platforms
+            - listitem [ref=e235]:
+              - generic [ref=e236]: ✓
+              - generic [ref=e237]: Privacy-first
+          - button "Get Started Free" [ref=e238] [cursor=pointer]
+        - generic [ref=e239]:
+          - generic [ref=e240]: ⭐ MOST POPULAR
+          - heading "Pro" [level=3] [ref=e241]
+          - generic [ref=e242]:
+            - generic [ref=e243]: $9.99
+            - generic [ref=e244]: /month
+          - list [ref=e245]:
+            - listitem [ref=e246]:
+              - generic [ref=e247]: ✓
+              - generic [ref=e248]: Unlimited replies
+            - listitem [ref=e249]:
+              - generic [ref=e250]: ✓
+              - generic [ref=e251]: 4 tone modes + custom
+            - listitem [ref=e252]:
+              - generic [ref=e253]: ✓
+              - generic [ref=e254]: Priority AI processing
+            - listitem [ref=e255]:
+              - generic [ref=e256]: ✓
+              - generic [ref=e257]: Email support
+          - button "Start 7-Day Trial" [ref=e258] [cursor=pointer]
+        - generic [ref=e259]:
+          - heading "Enterprise" [level=3] [ref=e260]
+          - generic [ref=e262]: Custom
+          - list [ref=e263]:
+            - listitem [ref=e264]:
+              - generic [ref=e265]: ✓
+              - generic [ref=e266]: Everything in Pro
+            - listitem [ref=e267]:
+              - generic [ref=e268]: ✓
+              - generic [ref=e269]: Team management
+            - listitem [ref=e270]:
+              - generic [ref=e271]: ✓
+              - generic [ref=e272]: API access
+            - listitem [ref=e273]:
+              - generic [ref=e274]: ✓
+              - generic [ref=e275]: Dedicated support
+          - button "Contact Sales" [ref=e276] [cursor=pointer]
+    - generic [ref=e281]:
+      - generic [ref=e283]:
+        - heading "Join the Waitlist" [level=2] [ref=e284]
+        - paragraph [ref=e285]: Help us build the perfect AI reply assistant. Share your thoughts!
+      - generic [ref=e286]:
+        - generic [ref=e287]:
+          - generic [ref=e288]:
+            - generic [ref=e289]: Name *
+            - textbox "Your name" [ref=e290]: Test User
+          - generic [ref=e291]:
+            - generic [ref=e292]: Email *
+            - textbox "your@email.com" [active] [ref=e293]: invalid-email
+        - generic [ref=e294]:
+          - generic [ref=e295]: Phone (Optional)
+          - textbox "+1 (555) 123-4567" [ref=e296]
+        - generic [ref=e297]:
+          - generic [ref=e298]: Are you currently using ChatGPT screenshot-and-paste for messaging replies? *
+          - generic [ref=e299]:
+            - generic [ref=e300] [cursor=pointer]:
+              - radio "Yes, all the time" [ref=e301]
+              - generic [ref=e302] [cursor=pointer]: Yes, all the time
+            - generic [ref=e303] [cursor=pointer]:
+              - radio "Sometimes" [ref=e304]
+              - generic [ref=e305] [cursor=pointer]: Sometimes
+            - generic [ref=e306] [cursor=pointer]:
+              - radio "Tried it, but it's too slow" [ref=e307]
+              - generic [ref=e308] [cursor=pointer]: Tried it, but it's too slow
+            - generic [ref=e309] [cursor=pointer]:
+              - radio "No, never tried it" [ref=e310]
+              - generic [ref=e311] [cursor=pointer]: No, never tried it
+        - generic [ref=e312]:
+          - generic [ref=e313]: What's your biggest struggle with messaging? (Check all that apply)
+          - generic [ref=e314]:
+            - generic [ref=e315] [cursor=pointer]:
+              - checkbox "Taking too long to reply" [ref=e316]
+              - generic [ref=e317] [cursor=pointer]: Taking too long to reply
+            - generic [ref=e318] [cursor=pointer]:
+              - checkbox "Don't know what to say" [ref=e319]
+              - generic [ref=e320] [cursor=pointer]: Don't know what to say
+            - generic [ref=e321] [cursor=pointer]:
+              - checkbox "Want to sound more professional" [ref=e322]
+              - generic [ref=e323] [cursor=pointer]: Want to sound more professional
+            - generic [ref=e324] [cursor=pointer]:
+              - checkbox "Struggle with tone (too formal/casual)" [ref=e325]
+              - generic [ref=e326] [cursor=pointer]: Struggle with tone (too formal/casual)
+            - generic [ref=e327] [cursor=pointer]:
+              - checkbox "Language barriers" [ref=e328]
+              - generic [ref=e329] [cursor=pointer]: Language barriers
+            - generic [ref=e330] [cursor=pointer]:
+              - checkbox "Keeping up with multiple conversations" [ref=e331]
+              - generic [ref=e332] [cursor=pointer]: Keeping up with multiple conversations
+            - textbox "Other (please specify)" [ref=e333]
+        - generic [ref=e334]:
+          - generic [ref=e335]: Which apps do you use most for messaging? (Check all that apply)
+          - generic [ref=e336]:
+            - generic [ref=e337] [cursor=pointer]:
+              - checkbox "WhatsApp" [ref=e338]
+              - generic [ref=e339] [cursor=pointer]: WhatsApp
+            - generic [ref=e340] [cursor=pointer]:
+              - checkbox "iMessage" [ref=e341]
+              - generic [ref=e342] [cursor=pointer]: iMessage
+            - generic [ref=e343] [cursor=pointer]:
+              - checkbox "Instagram" [ref=e344]
+              - generic [ref=e345] [cursor=pointer]: Instagram
+            - generic [ref=e346] [cursor=pointer]:
+              - checkbox "LinkedIn" [ref=e347]
+              - generic [ref=e348] [cursor=pointer]: LinkedIn
+            - generic [ref=e349] [cursor=pointer]:
+              - checkbox "Email" [ref=e350]
+              - generic [ref=e351] [cursor=pointer]: Email
+            - generic [ref=e352] [cursor=pointer]:
+              - checkbox "Slack" [ref=e353]
+              - generic [ref=e354] [cursor=pointer]: Slack
+            - generic [ref=e355] [cursor=pointer]:
+              - checkbox "Dating apps (Tinder, Bumble, etc.)" [ref=e356]
+              - generic [ref=e357] [cursor=pointer]: Dating apps (Tinder, Bumble, etc.)
+            - generic [ref=e358] [cursor=pointer]:
+              - checkbox "Discord" [ref=e359]
+              - generic [ref=e360] [cursor=pointer]: Discord
+          - textbox "Other apps (please specify)" [ref=e361]
+        - generic [ref=e362]:
+          - generic [ref=e363]: How much time do you spend replying to messages daily? *
+          - combobox [ref=e364]:
+            - option "Select..." [selected]
+            - option "Less than 30 minutes"
+            - option "30 min - 1 hour"
+            - option "1-2 hours"
+            - option "2+ hours"
+        - generic [ref=e365]:
+          - generic [ref=e366]: What ideas do you have for ReplyCopilot? What features would you love to see?
+          - textbox "Share your thoughts, feature requests, or any ideas you have to make ReplyCopilot better..." [ref=e367]
+        - button "Join the Waitlist 🚀" [ref=e368] [cursor=pointer]
+        - paragraph [ref=e369]: 🔒 Your data is 100% secure and will never be shared
+    - generic [ref=e371]:
+      - generic [ref=e372]:
+        - heading "Coming Soon" [level=2] [ref=e373]
+        - paragraph [ref=e374]: Exciting features on the horizon
+      - generic [ref=e375]:
+        - generic [ref=e376]:
+          - generic [ref=e377]: 📱
+          - heading "iOS App" [level=3] [ref=e378]
+          - paragraph [ref=e379]: In Development
+          - paragraph [ref=e380]: Launching Q2 2025
+          - paragraph [ref=e382]: 🚀 Active Development
+        - generic [ref=e383]:
+          - generic [ref=e384]: 🤖
+          - heading "Android App" [level=3] [ref=e385]
+          - paragraph [ref=e386]: Coming Soon
+          - paragraph [ref=e387]: Q3 2025
+        - generic [ref=e388]:
+          - generic [ref=e389]: 🌐
+          - heading "Browser Extension" [level=3] [ref=e390]
+          - paragraph [ref=e391]: Planned
+          - paragraph [ref=e392]: Q4 2025
+        - generic [ref=e393]:
+          - generic [ref=e394]: 🔌
+          - heading "Developer API" [level=3] [ref=e395]
+          - paragraph [ref=e396]: Planned
+          - paragraph [ref=e397]: "2025"
+        - generic [ref=e398]:
+          - generic [ref=e399]: 🌍
+          - heading "Multi-Language" [level=3] [ref=e400]
+          - paragraph [ref=e401]: Planned
+          - paragraph [ref=e402]: "2025"
+        - generic [ref=e403]:
+          - generic [ref=e404]: 🎨
+          - heading "Custom AI Training" [level=3] [ref=e405]
+          - paragraph [ref=e406]: Research
+          - paragraph [ref=e407]: "2026"
+    - generic [ref=e409]:
+      - heading "Ready to Transform Your Messaging?" [level=2] [ref=e410]
+      - paragraph [ref=e411]: Join 10,000+ people on the waitlist. Launching March 2025.
+      - generic [ref=e412]:
+        - button "Join Waitlist Now" [ref=e413] [cursor=pointer]
+        - button "Watch Full Demo" [ref=e414] [cursor=pointer]
+      - paragraph [ref=e415]: 🎉 No credit card required • Privacy-first guarantee • iOS launching Q2 2025
+    - contentinfo [ref=e416]:
+      - generic [ref=e417]:
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - generic [ref=e420]:
+              - generic [ref=e421]: ⚡
+              - generic [ref=e422]: ReplyCopilot
+            - paragraph [ref=e423]: AI-powered smart replies for any messaging app
+          - generic [ref=e424]:
+            - heading "Product" [level=4] [ref=e425]
+            - list [ref=e426]:
+              - listitem [ref=e427]:
+                - link "How It Works" [ref=e428] [cursor=pointer]:
+                  - /url: "#how-it-works"
+              - listitem [ref=e429]:
+                - link "Features" [ref=e430] [cursor=pointer]:
+                  - /url: "#features"
+              - listitem [ref=e431]:
+                - link "Pricing" [ref=e432] [cursor=pointer]:
+                  - /url: "#pricing"
+              - listitem [ref=e433]:
+                - link "Try Demo" [ref=e434] [cursor=pointer]:
+                  - /url: "#demo"
+          - generic [ref=e435]:
+            - heading "Company" [level=4] [ref=e436]
+            - list [ref=e437]:
+              - listitem [ref=e438]:
+                - link "About Us" [ref=e439] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e440]:
+                - link "Blog" [ref=e441] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e442]:
+                - link "Careers" [ref=e443] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e444]:
+                - link "Contact" [ref=e445] [cursor=pointer]:
+                  - /url: "#"
+          - generic [ref=e446]:
+            - heading "Legal" [level=4] [ref=e447]
+            - list [ref=e448]:
+              - listitem [ref=e449]:
+                - link "Privacy Policy" [ref=e450] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e451]:
+                - link "Terms of Service" [ref=e452] [cursor=pointer]:
+                  - /url: "#"
+              - listitem [ref=e453]:
+                - link "Security" [ref=e454] [cursor=pointer]:
+                  - /url: "#"
+        - paragraph [ref=e456]: © 2025 ReplyCopilot. Built with ❤️ and GPT-4o Vision.
+  - button "Open Next.js Dev Tools" [ref=e462] [cursor=pointer]:
+    - img [ref=e463] [cursor=pointer]
+  - alert [ref=e466]
+```

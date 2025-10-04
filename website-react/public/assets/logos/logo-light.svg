@@ -1,0 +1,20 @@
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- AgentChains light logo (for dark backgrounds) -->
+  <defs>
+    <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff3c00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#adff00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Icon -->
+  <circle cx="15" cy="25" r="8" fill="none" stroke="url(#lightGradient)" stroke-width="3"/>
+  <circle cx="35" cy="25" r="8" fill="none" stroke="url(#lightGradient)" stroke-width="3"/>
+  <rect x="21" y="22" width="8" height="6" rx="3" fill="url(#lightGradient)"/>
+  <circle cx="25" cy="25" r="2" fill="#adff00"/>
+
+  <!-- Text in white -->
+  <text x="50" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff">
+    <tspan>Agent</tspan><tspan fill="#adff00">Chains</tspan>
+  </text>
+</svg>
